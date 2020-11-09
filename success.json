@@ -1,0 +1,48 @@
+{
+    "status": "pass",
+    "users": [
+      {
+        "id": 2,
+        "Name": "sarim aleem",
+        "Password": "43042jdfjsdkl3u4$#_d",
+        "Email": "myboi@gmail.com",
+        "School email": "myboi@utexas.org",
+        "Distance": 10,
+        "Major": "Computer Science",
+        "Bio": "OMG hey!!! they call me jay jay",
+        "image-link": "/image.png",
+        "Classification": "Sophmore",
+        "Birthdate": "DateTime()",
+        "Gender": "male"
+      },
+      {
+        "id": 3,
+        "Name": "gabby something",
+        "Password": "sdjfladksj;f",
+        "Email": "hello@gmail.com",
+        "School email": "myboi@utexas.org",
+        "distance" : 4,
+        "Location": "(Location object)",
+        "Major": "Computer Science",
+        "Bio": "OMG hey!!! they call me jay jay",
+        "image-link": "/image.png",
+        "Classification": "Sophmore",
+        "Birthdate": "DateTime()",
+        "Gender": "male"
+      },
+      {
+        "id": 2,
+        "Name": "angelo cullocatta (sorry)",
+        "Password": "43042jdfjsdkl3u4$#_d",
+        "Email": "myboi@gmail.com",
+        "School email": "myboi@utexas.org",
+        "Distance": 7,
+        "Major": "Computer Science",
+        "Bio": "OMG hey!!! they call me jay jay",
+        "image-link": "/image.png",
+        "Classification": "Sophmore",
+        "Birthdate": "DateTime()",
+        "Gender": "male"
+      }
+    ]
+  }
