@@ -3,12 +3,14 @@ This module simply initializes all important things to build the webapplicatioln
 """
 
 from flask import Flask
+from src.routes import bp
 
 def create_app(config_object='src.settings') -> Flask:
 
     app = Flask(__name__)
     app.config.from_object(config_object)
     init_extensions(app)
+    app.register_blueprint(bp)
 
     return app
 
