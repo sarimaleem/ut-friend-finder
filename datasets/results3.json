@@ -1,0 +1,62 @@
+{
+    "status": "pass",
+    "users": [
+      {
+        "id": 2,
+        "Name": "bob dylan",
+        "Password": "43042jdfjsdkl3u4$#_d",
+        "Email": "bob.dylan88@gmail.com",
+        "School email": "bobdylan@utexas.org",
+        "Distance": 15,
+        "Major": "Biology",
+        "Bio": "John here, class of 2024 bio major",
+        "image-link": "/image.png",
+        "Classification": "freshman",
+        "Birthdate": "DateTime()",
+        "Gender": "male"
+      },
+      {
+        "id": 3,
+        "Name": "hermione granger",
+        "Password": "hfdjkashflkjds",
+        "Email": "hermoine@gmail.com",
+        "School email": "hermoine@utexas.org",
+        "distance" : 4,
+        "Location": "(Location object)",
+        "Major": "Chemistry",
+        "Bio": "I LIKE MAGIC",
+        "image-link": "/image.png",
+        "Classification": "junior",
+        "Birthdate": "DateTime()",
+        "Gender": "female"
+      },
+      {
+        "id": 4,
+        "Name": "harry potter",
+        "Password": "hjfjlaksdjjgfuoildisghsofl0",
+        "Email": "harry@gmail.com",
+        "School email": "harry.potter@utexas.org",
+        "Distance": 7,
+        "Major": "agriculture",
+        "Bio": "dumbelodore dies",
+        "image-link": "/image.png",
+        "Classification": "post grad",
+        "Birthdate": "DateTime()",
+        "Gender": "male"
+      },
+      {
+        "id": 5,
+        "Name": "jon doe",
+        "Password": "ghfdjlkssgh",
+        "Email": "jonthedoe@gmail.com",
+        "School email": "jon.doe@utexas.org",
+        "Distance": 1,
+        "Major": "Computer Science",
+        "Bio": "my name is john",
+        "image-link": "/image.png",
+        "Classification": "Post Grad",
+        "Birthdate": "DateTime()",
+        "Gender": "Male"
+      }
+    ]
+  }
