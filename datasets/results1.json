@@ -31,7 +31,7 @@
         "Gender": "male"
       },
       {
-        "id": 2,
+        "id": 4,
         "Name": "angelo cullocatta (sorry)",
         "Password": "43042jdfjsdkl3u4$#_d",
         "Email": "myboi@gmail.com",
@@ -43,6 +43,20 @@
         "Classification": "Sophmore",
         "Birthdate": "DateTime()",
         "Gender": "male"
+      },
+      {
+        "id": 5,
+        "Name": "jon doe",
+        "Password": "ghfdjlkssgh",
+        "Email": "jonthedoe@gmail.com",
+        "School email": "jon.doe@utexas.org",
+        "Distance": 1,
+        "Major": "Computer Science",
+        "Bio": "my name is john",
+        "image-link": "/image.png",
+        "Classification": "Post Grad",
+        "Birthdate": "DateTime()",
+        "Gender": "Male"
       }
     ]
   }
