@@ -92,3 +92,10 @@ def delete_user():
     user = get_user()
     db.session.delete(user)
 
+@bp.route("/allusers", methods=["GET"])
+def get_users():
+    users = User.query.all()
+    for user in users:
+        print(user)
+    return jsonify(users)
+
