@@ -15,7 +15,7 @@ def create_app(config_object='src.settings') -> Flask:
     return app
 
 def init_extensions(app):
-    from src.ext import db, migrate, bcrypt, jwt
+    from src.ext import db, migrate, bcrypt, jwt, ma
     # Import some of our extenisons
 
     db.init_app(app) # Databse
@@ -23,3 +23,4 @@ def init_extensions(app):
     bcrypt.init_app(app) # Password hash generator
     migrate.init_app(app, db) # Database migrate tool (used for changing models)
     jwt.init_app(app) # webtoken module
+    ma.init_app(app)
