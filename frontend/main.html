@@ -14,14 +14,13 @@
     table, th, tr{
     border: 1px solid black;
   }
-  .grid-container {
+  .filter-container {
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 10px;
   }
-  .grid-item {
+  .filter-item {
     background-color: rgba(255, 255, 255, 0.8);
-    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
     padding: 20px;
     font-size: 30px;
     text-align: center;
@@ -43,10 +42,6 @@
     display: none;
   }
 
-  .dropbtn hover {
-
-  }
-
   </style>
   <head>
     <title>Search</title>
@@ -55,32 +50,46 @@
     <h3>Filters</h3>
 
     <h4>Location</h4>
-    <div class="grid-container">
-      <div class="grid-item">
+    <div class="filter-container">
+      <div class="filter-item">
         <h6>Distance from me</h6>
         <button class="dropbtn">Select</button>
       </div>
-      <div class="grid-item">
+      <div class="filter-item">
         <h6>Close to City</h6>
         <button class="dropbtn">Select</button>
       </div>
     </div>
 
     <h4>Personal</h4>
-    <div class="grid-container">
-      <div class="grid-item">
+    <div class="filter-container">
+      <div class="filter-item">
         <h6>Age</h6>
         <button class="dropbtn">Select</button>
+        <div class="dropdown-content">
+          <a href="#">18</a>
+          <a href="#">19</a>
+          <a href="#">20</a>
+          <a href="#">21</a>
+          <a href="#">22</a>
+          <a href="#">23</a>
+        </div>
       </div>
-      <div class="grid-item">
+      <div class="filter-item">
         <h6>Gender</h6>
+        <div class="dropdown-content">
+          <a href="#">Female</a>
+          <a href="#">Male</a>
+          <a href="#">Non-binary</a>
+          <a href="#">Other</a>
         <button class="dropbtn">Select</button>
+        </div>
       </div>
     </div>
 
     <h4>Academics</h4>
-    <div class="grid-container">
-      <div class="grid-item">
+    <div class="filter-container">
+      <div class="filter-item">
         <h6>Year</h6>
         <button class="dropbtn">Select</button>
         <div class="dropdown-content">
@@ -88,16 +97,19 @@
           <a href="#">Sophmore</a>
           <a href="#">Junior</a>
           <a href="#">Senior</a>
+          <a href="#">Postgrad</a>
         </div>
       </div>
-      <div class="grid-item">
+      <div class="filter-item">
         <h6>College</h6>
         <button class="dropbtn">Select</button>
       </div>
-      <div class="grid-item">
+      <div class="filter-item">
         <h6>Major</h6>
         <button class="dropbtn">Select</button></div>
     </div>
+
+
     <div id="putTableHere"></div>
     <script src="search.js"></script>
 
