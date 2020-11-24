@@ -1,3 +1,4 @@
+Undeclared
 Architecture
 Geological Sciences
 Music
@@ -5,8 +6,6 @@ Theatre and Dance
 Business Administration
 Fine Arts
 Journalism
-Music
-and Arts
 Advertising
 Aerospace Engineering
 Applied Learning and Development
