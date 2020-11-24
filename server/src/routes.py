@@ -98,3 +98,9 @@ def get_users():
     result = UserSchema(many=True).dump(users)
     return jsonify(result)
 
+# @bp.route("/foo", methods=["GET"])
+# def foo():
+#     users = User.query.filter_by(major='cs').all()
+#     return jsonify(users)
+
+
