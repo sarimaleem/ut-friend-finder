@@ -1,0 +1,59 @@
+body {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto 20px;
+}
+
+h4 {
+  font-family: 'Segoe UI Light';
+  font-size: 20px;
+  color: #BF5700;
+}
+
+table, th, tr{
+  border: 1px solid black;
+}
+
+.section {
+  border-bottom: 2px ridge #BF5700;
+}
+
+.filter-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.filter-item {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.btn {
+    margin: 10px 0px 10px auto;
+    float: right;
+    padding: 20px 60px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #BF5700;
+    color: white;
+}
+
+label {
+  display: grid;
+  font-size: 20px;
+}
+
+select {
+  align-items: stretch;
+  width: 250px;
+  float: left;
+  height: 20px;
+  padding: 2px;
+  border-radius: 5px;
+}

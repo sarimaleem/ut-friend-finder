@@ -1,173 +1,102 @@
 
 <!doctype html>
 <html>
-  <style>
-
-  h3, h4, h6, a {
-    font-family: Arial, sans-serif;
-  }
-  h4 {
-    font-size: 20px;
-  }
-  h6, a {
-    font-size: 10px;
-  }
-    table, th, tr{
-    border: 1px solid black;
-  }
-  .filter-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-  }
-  .filter-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
-  .dropbtn {
-    background-color: #E8EAEE;
-    color: black;
-    border: none;
-    padding-top, padding-bottom: 2px;
-    width: 200px;
-    text-align: left;
-    font-size: 10px;
-    cursor: pointer;
-  }
-
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    width: 100%;
-    padding: 5px 10px;
-    z-index: 1;
-  }
-
-  .dropdown-content a {
-    color: black;
-    display: block;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .dropdown-content a:hover {
-    background-color: #E8EAEE;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  </style>
   <head>
     <title>Search</title>
+    <link rel="stylesheet" href="searchfilters.css" />
   </head>
-  <script>
-    function newSelection(id, selection) {
-      document.getElementById(id).innerHTML = selection;
-    }
-  </script>
   <body>
-    <h3>Filters</h3>
-
-    <h4>Location</h4>
-    <div class="filter-container">
-      <div class="filter-item">
-        <h6>Distance from me</h6>
-        <div class="dropdown">
-          <button class="dropbtn" id="dist-from-me-opt">Select</button>
-          <div class="dropdown-content">
-            <a onclick="newSelection('dist-from-me-opt', 'Select')">Select...</a>
+    <h1>Search for a Friend</h1>
+    <div class="section">
+      <h4>Location</h4>
+      <div class="filter-container">
+        <div class="filter-item">
+          <label>Distance from me</label>
+          <div class="dropdown">
+            <select name="distance-opt">
+              <option value="Select">Select</option>
+            </select>
           </div>
         </div>
-      </div>
-      <div class="filter-item">
-        <h6>Close to City</h6>
-        <div class="dropdown">
-          <button class="dropbtn" id="close-to-city-opt">Select</button>
-          <div class="dropdown-content">
-            <a onclick="newSelection('close-to-city-opt', 'Select')">Select...</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <h4>Personal</h4>
-    <div class="filter-container">
-      <div class="filter-item">
-        <h6>Age</h6>
-        <div class="dropdown">
-          <button class="dropbtn" id="age-opt">Select</button>
-          <div class="dropdown-content">
-            <a onclick="newSelection('age-opt', 'Select')">Select...</a>
-            <a onclick="newSelection('age-opt', '18')">18</a>
-            <a onclick="newSelection('age-opt', '19')">19</a>
-            <a onclick="newSelection('age-opt', '20')">20</a>
-            <a onclick="newSelection('age-opt', '21')">21</a>
-            <a onclick="newSelection('age-opt', '22')">22</a>
-            <a onclick="newSelection('age-opt', '23')">23</a>
-            <a onclick="newSelection('age-opt', '24+')">24+</a>
-          </div>
-        </div>
-      </div>
-      <div class="filter-item">
-        <h6>Gender</h6>
-        <div class="dropdown">
-          <button class="dropbtn" id="gender-opt">Select</button>
-          <div class="dropdown-content">
-            <a onclick="newSelection('gender-opt', 'Select')">Select...</a>
-            <a onclick="newSelection('gender-opt', 'Female')">Female</a>
-            <a onclick="newSelection('gender-opt', 'Male')">Male</a>
-            <a onclick="newSelection('gender-opt', 'Non-binary')">Non-binary</a>
-            <a onclick="newSelection('gender-opt', 'Other')">Other</a>
+        <div class="filter-item">
+          <label>Close to City</label>
+          <div class="dropdown">
+            <select name="closeness-opt">
+              <option value="Select">Select</option>
+            </select>
           </div>
         </div>
       </div>
     </div>
 
-    <h4>Academics</h4>
-    <div class="filter-container">
-      <div class="filter-item">
-        <h6>Year</h6>
-        <div class="dropdown">
-          <button class="dropbtn" id="year-opt">Select</button>
-          <div class="dropdown-content">
-            <a onclick="newSelection('year-opt', 'Select')">Select...</a>
-            <a onclick="newSelection('year-opt', 'Freshman')">Freshman</a>
-            <a onclick="newSelection('year-opt', 'Sophomore')">Sophmore</a>
-            <a onclick="newSelection('year-opt', 'Junior')">Junior</a>
-            <a onclick="newSelection('year-opt', 'Senior')">Senior</a>
-            <a onclick="newSelection('year-opt', 'Postgrad')">Postgrad</a>
+    <div class="section">
+      <h4>Personal</h4>
+      <div class="filter-container">
+        <div class="filter-item">
+          <label>Age</label>
+          <div class="dropdown">
+            <select name="age-opt">
+              <option value="Select">Select</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23+">23+</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-item">
+          <label>Gender</label>
+          <div class="dropdown">
+            <select name="gender-opt">
+              <option value="Select">Select</option>
+              <option value="Female">Female</option>
+              <option value="Male">Male</option>
+              <option value="Non-binary">Non-binary</option>
+              <option value="Other">Other</option>
+            </select>
           </div>
         </div>
       </div>
-      <div class="filter-item">
-        <div class="dropdown">
-          <h6>College</h6>
-          <button class="dropbtn" id="college-opt">Select</button>
-          <div class="dropdown-content">
-            <a onclick="newSelection('college-opt', 'Select')">Select...</a>
-          </div>
-        </div>
-      </div>
-      <div class="filter-item">
-        <div class="dropdown">
-          <h6>Major</h6>
-          <button class="dropbtn" id='major'>Select</button>
-          <div class="dropdown-content">
-            <a onclick="newSelection('major', 'Select')">Select...</a>
-          </div>
-        </div>
     </div>
 
+    <div class="section">
+      <h4>Academics</h4>
+      <div class="filter-container">
+        <div class="filter-item">
+          <label>Year</label>
+          <div class="dropdown">
+            <select name="year-opt">
+              <option value="Select">Select</option>
+              <option value="Freshman">Freshman</option>
+              <option value="Sophomore">Sophomore</option>
+              <option value="Junior">Junior</option>
+              <option value="Senior">Senior</option>
+              <option value="Postgrad">Postgrad</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-item">
+          <label>College</label>
+          <div class="dropdown">
+            <select name="college-opt">
+              <option value="Select">Select</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-item">
+          <label>Major</label>
+          <div class="dropdown">
+            <select name="college-opt">
+              <option value="Select">Select</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="btn">Find My Friends!</a>
 
     <div id="putTableHere"></div>
     <script src="search.js"></script>
