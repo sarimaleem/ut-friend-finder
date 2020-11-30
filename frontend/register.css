@@ -7,9 +7,9 @@ body {
 .content {
     display: flex;
     align-items: stretch;
-    margin: 20vh auto;
+    margin: 10vh auto;
     width: 350px;
-    height: 900px;
+    height: 1100px;
     padding: 30px;
     border: 0.5px solid grey;
     border-radius: 10px;
@@ -59,7 +59,7 @@ label {
 
 input[type=text], input[type=password] {
     width: 100%;
-    padding: 12px 0; 
+    padding: 12px 6px; 
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -79,7 +79,7 @@ a {
 }
 
 select {
-   padding: 16px 0;
+   padding: 16px 6px;
    width: 100%;
    margin: 8px 0; 
    border: 1px solid #ccc;
