@@ -1,4 +1,5 @@
 from src.models import User
+from src.ext import ma
 from marshmallow import fields, Schema
 
 class UserSchema(ma.SQLAlchemyAutoSchema):

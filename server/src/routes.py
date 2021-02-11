@@ -62,14 +62,14 @@ def login():
     user = User.query.filter_by(username=login_form.username).first()
     if user and bcrypt.check_password_hash(user.password, login_form.password):
         token = create_token(user)
-        return jsonify({"token" : token})
+        return jsonify({"token" : token, "status": "Success"})
 
     return jsonify({ "status": "Error", "msg": "Wrong username or password" })
 
-@bp.route("/register")
+@bp.route("/register", methods=["POST"])
 @validate_schema
 def register():
-    user_form = UserSchema().load(request.form)
+    user_form = UserSchema().load(request.json)
 
     if User.query.filter_by(username=user_form.username).first():
         return jsonify({"status" : "Error", "msg" : "Username already exists"})
