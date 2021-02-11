@@ -58,9 +58,9 @@ def get_user_by_id():
 @bp.route("/login", methods=["POST"])
 @validate_schema
 def login():
-    login_form = LoginSchema.load(request.json)
-    user = User.query.filter_by(username=login_form.username).first()
-    if user and bcrypt.check_password_hash(user.password, login_form.password):
+    login_form = LoginSchema().load(request.json)
+    user = User.query.filter_by(username=login_form['username']).first()
+    if user and bcrypt.check_password_hash(user.password, login_form['password']):
         token = create_token(user)
         return jsonify({"token" : token, "status": "Success"})
 
@@ -91,4 +91,16 @@ def delete_user():
     # DELETE's the user from the database
     user = get_user()
     db.session.delete(user)
+
+@bp.route("/allusers", methods=["GET"])
+def get_users():
+    users = User.query.all()
+    result = UserSchema(many=True).dump(users)
+    return jsonify(result)
+
+# @bp.route("/foo", methods=["GET"])
+# def foo():
+#     users = User.query.filter_by(major='cs').all()
+#     return jsonify(users)
+
 

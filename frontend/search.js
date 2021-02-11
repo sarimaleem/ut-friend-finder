@@ -68,4 +68,4 @@ var hey = {
   x += "</table>"
 
   document.body.innerHTML += x; //append to the doc
-  console.log(x)
+  console.log(x)  

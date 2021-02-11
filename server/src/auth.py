@@ -9,3 +9,4 @@ def get_user(f):
     user_id = get_jwt_identity()
     user = User.query.get(user_id)
     return user
+

@@ -1,17 +1,104 @@
 
 <!doctype html>
 <html>
-  <style>
-    table, th, tr{
-      border: 2px solid black;
-    }
-  </style>
   <head>
-    <title>woooo</title>
+    <title>Search</title>
+    <link rel="stylesheet" href="searchfilters.css" />
   </head>
   <body>
+    <h1>Search for a Friend</h1>
+    <div class="section">
+      <h4>Location</h4>
+      <div class="filter-container">
+        <div class="filter-item">
+          <label>Distance from me</label>
+          <div class="dropdown">
+            <select name="distance-opt">
+              <option value="Select">Select</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-item">
+          <label>Close to City</label>
+          <div class="dropdown">
+            <select name="closeness-opt">
+              <option value="Select">Select</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h4>Personal</h4>
+      <div class="filter-container">
+        <div class="filter-item">
+          <label>Age</label>
+          <div class="dropdown">
+            <select name="age-opt">
+              <option value="Select">Select</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23+">23+</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-item">
+          <label>Gender</label>
+          <div class="dropdown">
+            <select name="gender-opt">
+              <option value="Select">Select</option>
+              <option value="Female">Female</option>
+              <option value="Male">Male</option>
+              <option value="Non-binary">Non-binary</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h4>Academics</h4>
+      <div class="filter-container">
+        <div class="filter-item">
+          <label>Year</label>
+          <div class="dropdown">
+            <select name="year-opt">
+              <option value="Select">Select</option>
+              <option value="Freshman">Freshman</option>
+              <option value="Sophomore">Sophomore</option>
+              <option value="Junior">Junior</option>
+              <option value="Senior">Senior</option>
+              <option value="Postgrad">Postgrad</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-item">
+          <label>College</label>
+          <div class="dropdown">
+            <select name="college-opt">
+              <option value="Select">Select</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-item">
+          <label>Major</label>
+          <div class="dropdown">
+            <select name="college-opt">
+              <option value="Select">Select</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="btn">Find My Friends!</a>
+
     <div id="putTableHere"></div>
     <script src="search.js"></script>
-
   </body>
 </html>
