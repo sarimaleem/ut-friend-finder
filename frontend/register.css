@@ -8,8 +8,8 @@ body {
     display: flex;
     align-items: stretch;
     margin: 10vh auto;
-    width: 350px;
-    height: 1100px;
+    width: 800px;
+    height: 1200px;
     padding: 30px;
     border: 0.5px solid grey;
     border-radius: 10px;
@@ -31,14 +31,25 @@ label {
     position: relative;
 }
 
+form {
+    display: inline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
 .center {
     text-align: center;
 }
 
 .form-field {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* margin-right: 20px; */
+    /* margin-top: 20px; */
+    width: 350px;
+    /* padding 5px 5px; */
 }
 
 .btn {
