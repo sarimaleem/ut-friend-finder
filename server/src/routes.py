@@ -52,7 +52,7 @@ def update_profile():
 @jwt_required
 def get_user_by_id():
     user = get_user()
-    return jsonify({"The json" : "oooh ye"})
+    return UserSchema().dump(user)
 
 
 @bp.route("/login", methods=["POST"])
