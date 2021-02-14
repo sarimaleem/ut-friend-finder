@@ -5,7 +5,7 @@ from .models import User
 def create_token(user):
     return create_access_token(identity=user.id)
 
-def get_user(f):
+def get_user():
     user_id = get_jwt_identity()
     user = User.query.get(user_id)
     return user

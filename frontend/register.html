@@ -7,62 +7,75 @@
     <link rel="stylesheet" href="./register.css" />
   </head>
   <body>
-    <div class="content">
-      <div class="form-container">
+    <div class = "content">
+      <div class = "form-content">
         <form action="/register" method="POST" class="">
-          <div class="center">
-            <h1>Register</h1>
-            <a href="login.html" class="center link"> or login</a>
+          <div class = "btn-holder">
+            <div class = "column-container">
+              <div class = "column" id = "col1">
+                <div class="center">
+                  <h1>Register</h1>
+                  <a href="./login.html" class="center link"> or login</a>
+                </div>
+                <div class="form-field">
+                  <label for="fname">First Name</label>
+                  <input type="text" class="text_field" />
+                </div>
+                
+                <div class="form-field">
+                  <label for="lname">Last Name</label>
+                  <input type="text" class="text_field" />
+                </div>
+                <div class="form-field">
+                  <label for="email">Email</label>
+                  <input type="text" class="text_field" />
+                </div>
+                <div class="form-field">
+                  <label for="gender">Gender</label>
+                  <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class = "column">
+                
+                
+                <div class="form-field">
+                  <label for="major">Major</label>
+                  <select name="major" id="major"></select>
+                </div>
+                <div class="form-field">
+                  <label for="zipcode">Zip Code</label
+                  ><input type="text" class="text_field" />
+                </div>
+                <div class="form-field">
+                  <label for="password">Password</label
+                  ><input type="password" class="text_field" />
+                </div>
+                <div class="form-field">
+                  <label for="confirmpassword">Confirm Password</label
+                  ><input type="password" class="text_field" />
+                </div>
+                <!-- <a href="#" class="btn submit">Submit</a> -->
+              </div>
+            </div>
+            <a href="#" class="btn submit">Submit</a>
           </div>
-          <div class="form-field">
-            <label for="fname">First Name</label>
-            <input type="text" class="text_field" />
-          </div>
-          <div class="form-field">
-            <label for="lname">Last Name</label>
-            <input type="text" class="text_field" />
-          </div>
-          <div class="form-field">
-            <label for="email">Email</label>
-            <input type="text" class="text_field" />
-          </div>
-          <div class="form-field">
-            <label for="phone">Cell Phone</label>
-            <input type="text" class="text_field" />
-          </div>
-          <div class="form-field">
-            <label for="gender">Gender</label>
-            <select name="gender">
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div class="form-field">
-            <label for="major">Major</label>
-            <select name="major" id="major"></select>
-          </div>
-          <div class="form-field">
-            <label for="zipcode">Zip Code</label
-            ><input type="text" class="text_field" />
-          </div>
-          <div class="form-field">
-            <label for="password">Password</label
-            ><input type="password" class="text_field" />
-          </div>
-          <div class="form-field">
-            <label for="confirmpassword">Confirm Password</label
-            ><input type="password" class="text_field" />
-          </div>
-          <a href="#" class="btn submit">Submit</a>
         </form>
       </div>
+    </div>
+    <div id = "background">
+      <div id="particles-js"></div>
     </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="particlebg.js"></script>
     <script type="module" src="readmajors.js"></script>
   </body>
 </html>
