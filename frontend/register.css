@@ -1,60 +1,75 @@
 
 body {
-    background-color: white;
+    background-color: #BF5700;
+    overflow: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.content {
+.content{
+    height: 100vh;
     display: flex;
-    align-items: stretch;
-    margin: 10vh auto;
-    width: 350px;
-    height: 1100px;
-    padding: 30px;
-    border: 0.5px solid grey;
-    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 0;
 }
-
-
 
 label {
     font-size: 20px;
 
 }
 
-.form-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    flex: 1 1 auto;
-    position: relative;
+.form-content{
+    border: 0.5px solid grey;
+    border-radius: 5px;
+    padding: 3%;
+    background-color: white;
+    box-shadow: 3px 2px 2px rgba(14, 7, 7, 0.449);
 }
 
-.center {
-    text-align: center;
+.column-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 2%;
+    width: 46%;
+}
+
+.btn-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#col1{
+    padding-right: 5%;
 }
 
 .form-field {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    width: 100%;
 }
 
 .btn {
-    margin: auto;
-    padding: 20px 60px;
-    border-radius: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
     text-decoration: none;
     background-color: #BF5700;
     color: white;
-}
-
-.submit {
-    flex: 1 0 auto;
-    position: absolute;
-    bottom: 0;
-    left: 23%;
+    text-align: center;
+    width: 30%;
+    height: 5%;
 }
 
 input[type=text], input[type=password] {
@@ -66,6 +81,16 @@ input[type=text], input[type=password] {
     border-radius: 10px;
     font-size: 100%;
     font-size: 20px;
+    box-sizing:border-box
+}
+
+#background{
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
 }
 
 a {
@@ -79,15 +104,12 @@ a {
 }
 
 select {
-   padding: 16px 6px;
+   padding: 12px 6px;
    width: 100%;
    margin: 8px 0; 
    border: 1px solid #ccc;
    border-radius: 10px;
    display: inline-block;
    font-size: 20px;
-}
-
-option {
-
+   -webkit-appearance: menulist-button;
 }

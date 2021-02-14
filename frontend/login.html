@@ -7,15 +7,13 @@
     <link rel="stylesheet" href="login.css" />
   </head>
   <body>
-    <!-- <div class="content"> -->
-      <!-- <div class="form-container"> -->
       <div class = "content">
         <h1 id = "app-name">UT Friend Finder</h1>
         <div class = "form-content">
           <form action="/login" method="POST" class="">
             <!-- <div class="center"> -->
               <h1>Login</h1>
-              <a href="/register" class="center link"> or register yourself</a>
+              <a href="./register.html" class="center link"> or register yourself</a>
             <!-- </div> -->
             <div class="form-field">
               <label for="email">Email</label>
@@ -25,11 +23,16 @@
               <label for="password">Password</label
               ><input type="password" class="text_field" />
             </div>
-            <!-- <a href="#" class="btn submit">Submit</a> -->
+            <div class = "submit">
+              <a href="#" class="btn">Submit</a>
+            </div>
           </form>
         </div>
       </div>
-      <!-- </div> -->
-    <!-- </div> -->
+      <div id = "background">
+        <div id="particles-js"></div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+      <script src="particlebg.js"></script>
   </body>
 </html>
