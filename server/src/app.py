@@ -3,6 +3,7 @@ This module simply initializes all important things to build the webapplicatioln
 """
 
 from flask import Flask
+import src.models
 from src.routes import bp
 
 def create_app(config_object='src.settings') -> Flask:
