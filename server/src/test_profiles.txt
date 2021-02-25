@@ -1,0 +1,6 @@
+joseID Jose jose@EMAIL Houston CNS ComputerScience Freshman 19
+audreyID Audrey audrey@EMAIL CollegeStation IDK Chemistry Freshman 19
+sareemID Sareem sareem@EMAIL Austin CNS ComputerScience Freshman 19
+michelleID Michelle michelle@EMAIL Austin CNS PublicHealth Freshman 19
+randomID Random random@EMAIL Austin CNS ComputerScience Junior 22
+random2ID Random2 random2@EMAIL Austin CNS NotCompSci Sophomore 20
