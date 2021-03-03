@@ -1,0 +1,147 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+body {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#page{
+    display: flex;
+    flex-direction: column;
+}
+
+#header{
+    position:fixed;
+    width:100%;
+    height: 15vh;
+    background: #f38327;
+    /* padding-top: 5vh; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-around;
+}
+
+#header div a{
+    font-size: 7vh;
+    color: white;
+    outline: none;
+    text-decoration: none;
+    font-weight: 700;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#header #search-bar{
+    background-color: white;
+    color: black;
+    padding: 12px;
+    width: 700px;
+    height: 6vh;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+}
+
+#header .header-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#profile-btn{
+    width: 70px;
+    height: 70px;
+    background: black;
+    border-radius: 50%
+}
+
+#content{
+    display: flex;
+    flex-direction: row;
+    height: 85vh;
+}
+
+/*filters*/
+#filter-bar{
+    position:fixed;
+    margin-top: 15vh;
+    width: 25%;
+    background-color: #BF5700;
+}
+
+#filter-bar h4{
+    text-align:center;
+    color: white;
+    font-size: 30px;
+    margin: 3px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.filter-item {
+    padding: 5%;
+    text-align: center;
+}
+
+.filter-item .dropdown select {
+    margin: 3px;
+    background-color: white;
+    color: black;
+    padding: 12px;
+    width: 250px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+}
+
+/*search results page*/
+#srp{
+    width: 70%;
+    padding: 5%;
+    margin-left: 30%;
+    margin-top: 15vh;
+}
+
+#srp-table .user-entry{
+    padding-left:5%;
+    padding-right:5%;
+    padding-bottom:5%;
+    padding-top:2%;
+    margin-bottom: 2px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#srp-table .user-entry h2{
+    margin-bottom: 2%;
+}
+
+.tags{
+    margin-top: 3%;
+}
+
+.tag {
+    height: 26px;
+    border-radius: 13px;
+    font-size: 15px;
+    background-color: green;
+    display: inline-block;
+    padding-left:10px;
+    padding-right:10px;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tag p{
+    color: white;
+}

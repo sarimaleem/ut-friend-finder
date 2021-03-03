@@ -67,5 +67,5 @@ var hey = {
   }
   x += "</table>"
 
-  document.body.innerHTML += x; //append to the doc
-  console.log(x)  
+  // document.getElementById("srp-table").innerHTML =  x; //append to the doc
+  
