@@ -1,6 +1,41 @@
-#!usr/bin/python
+from src.models import User
+import functools
 
 import sys
+
+def ranking(user: User) -> int:
+    ranker = functools.partial(rank, user)
+    return sorted([User.query.all()], key=ranker)
+
+def rank(a: User, b: User):
+    """
+    Compares to students to each other, and returns their compat_index
+    """
+    compat_index = 0
+
+    location_weight = 5
+    school_weight = 5
+    major_weight = 8
+    classif_weight = 2
+    age_weight = 2
+
+
+    if a.location == b.location:
+        compat_index += location_weight
+
+    if a.school == b.school:
+        compat_index += school_weight
+
+    if a.major == b.major:
+        compat_index += major_weight
+
+    if a.classification == b.classification:
+        compat_index += classif_weight
+
+    if a.age == b.age:
+        compat_index += age_weight
+
+    return compat_index
 
 def main():
     #                0   1     2      3       4      5         6         7
@@ -8,11 +43,6 @@ def main():
     #will gender matter? how will we handle the classes theyre in?
 
     # weights are arbitrarily chosen and range from 1-10
-    location_weight = 5
-    school_weight = 5
-    major_weight = 8
-    classif_weight = 2
-    age_weight = 2
 
     # user is first line of input
     this_user = sys.stdin.readline().strip().split()
@@ -54,7 +84,7 @@ def main():
 
         other_age = int(other_user[7])
 
-        # would this just be a dorm or apartment name? I mean, is there code out there that could tell us the distance between 2 specific adresses?
+        # Would this just be a dorm or apartment name? I mean, is there code out there that could tell us the distance between 2 specific adresses?
         if(this_location == other_location):
             compat_index += 1*location_weight
         if (this_school == other_school):
@@ -67,7 +97,7 @@ def main():
         rec_matches.append((compat_index, other_id))
         other_user = sys.stdin.readline().strip().split()
 
-    print (sorted(rec_matches, reverse=bool(1)))
+    print(sorted(rec_matches, reverse=bool(1)))
 
 if __name__ == "__main__":
     main()

@@ -2,7 +2,8 @@
 This module holds in all of the sweeet sweet database models/tables
 """
 from src.ext import db
-from sqlalchemy import Column, Integer, String, Text
+from datetime import datetime
+from sqlalchemy import Column, Integer, String, Text, DATETIME
 
 class User(db.Model):
 
@@ -17,9 +18,14 @@ class User(db.Model):
     bio = Column(String)
     image_link = Column(String)
     classification = Column(String)
-    birthdate = Column(String)
-    gender = Column(String)
+    birthdate = Column(DATETIME)
+    school = Column(String) # Switch to enum
+    gender = Column(String) # Switch to enum??
 
     # How do we store this one?? we'll do sting for now, but we need to talk about this one
     location = Column(String)
+
+    @property
+    def age(self):
+        return (datetime.now() - self.birthdate).days // 365
 

@@ -85,6 +85,13 @@ def register():
 def search():
     form = request.form
 
+@bp.route("/reccomend")
+@jwt_required
+def reccomend():
+    user = get_user()
+
+
+
 @bp.route("/user", methods=["DELETE"])
 @jwt_required
 def delete_user():
