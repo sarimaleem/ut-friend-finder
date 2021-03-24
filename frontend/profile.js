@@ -36,11 +36,14 @@ function save() {
 
 function addsocial() {
   let socialContainer = document.createElement("div");
-  socialContainer.innerHTML =
+  let description = document.createElement("p");
+    description.innerHTML =
     document.getElementById("socialName").value +
     " " +
     document.getElementById("socialUsername").value;
 
+  socialContainer.classList.add("social-container");
+  socialContainer.appendChild(description);
   let button = document.createElement("button");
   button.innerHTML = "-";
   button.onclick = deletesocial;

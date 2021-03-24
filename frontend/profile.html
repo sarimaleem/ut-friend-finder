@@ -8,35 +8,43 @@
 </head>
 
 <body>
-    <div>
-        <div class="pfp">
-            <img src="../pfp.png">
+    <div id="header">
+        <div class = "header-element">
+            <a href = "./search.html">UTFF</a>
         </div>
-
-        <div class="nameContainer">
-            <h1 id="name"></h1>
+        <div class = "header-element">
+          <input id = "search-bar" type = "text"/>
         </div>
-
-        <div class="bioContainer">
-            <input type="text" id="bio" name="social" value="" placeholder="enter social" onclick="edit()">
-            <br>
-            <input type="button" id="bioButton" name="button" value="save" onclick="save()">
-        </div>
-        <div class="socialsContainer">
-            <div id="socialsList">
-            </div>
-            <div id="addSocial">
-                <form name="myform" action="" method="get">
-                    <label>Enter Socials: </label>
-                    <br>
-                    <input type="text"  name="social" id = "socialName" value="" placeholder="enter social">
-                    <input type="text" id="socialUsername" name="social" value="" placeholder="username">
-                    <input type="button"  name="button" value="add social" onclick="addsocial()">
-                </form>
-            </div>
+        <div class = "header-element">
+          <div id="profile-btn"></div>
         </div>
     </div>
+
+    <div class="wrapper">
+
+        <img src="../pfp.png">
+
+        <div class="desc">
+            <h1 id="name"></h1>
+            <div class="bioContainer">
+                <input type="text" id="bio" name="social" value="" placeholder="enter social" onclick="edit()">
+                <br>
+                <input type="button" id="bioButton" name="button" value="save" onclick="save()">
+                <div id="socialsList"></div>
+            </div>
+        </div>
+        <div id="addSocial">
+            <form name="myform" action="" method="get">
+                <label>Enter Socials: </label>
+                <br>
+                <input type="text"  name="social" id = "socialName" value="" placeholder="enter social">
+                <input type="text" id="socialUsername" name="social" value="" placeholder="username">
+                <input type="button"  name="button" value="add social" onclick="addsocial()">
+            </form>
+        </div>
+
+    </div>
+
     <script src="profile.js"></script>
 </body>
-
 </html>
