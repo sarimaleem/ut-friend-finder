@@ -22,12 +22,15 @@
 
     <div class="wrapper">
 
-        <img src="../pfp.png">
+        <div class="pic">
+            <img src="../pfp.png">
+        </div>
 
         <div class="desc">
             <h1 id="name"></h1>
             <div class="bioContainer">
-                <input type="text" id="bio" name="social" value="" placeholder="enter social" onclick="edit()">
+                <textarea cols="90" rows="10" type="text" id="bio" name="social" value="" placeholder="enter social" onclick="edit()"> </textarea>
+                <br>
                 <br>
                 <input type="button" id="bioButton" name="button" value="save" onclick="save()">
                 <div id="socialsList"></div>
@@ -39,7 +42,7 @@
                 <br>
                 <input type="text"  name="social" id = "socialName" value="" placeholder="enter social">
                 <input type="text" id="socialUsername" name="social" value="" placeholder="username">
-                <input type="button"  name="button" value="add social" onclick="addsocial()">
+                <input type="button"  name="button" value="add social" onclick="appendSocial()">
             </form>
         </div>
 

@@ -14,15 +14,7 @@ var socials = {
 document.getElementById("name").innerText = info.first + " " + info.last;
 document.getElementById("bio").value = info.bio;
 
-for (var key of Object.keys(socials)) {
-  let socialContainer = document.createElement("div");
-  socialContainer.innerHTML = key + " " + socials[key];
-  let button = document.createElement("button");
-  button.innerHTML = "-";
-  button.onclick = deletesocial;
-  socialContainer.appendChild(button);
-  document.getElementById("socialsList").appendChild(socialContainer);
-}
+Object.keys(socials).map((key, _) => addsocial(key, socials[key]))
 
 function save() {
   // document.getElementById("bio") = bio.value;
@@ -34,21 +26,25 @@ function save() {
   // do stuff
 }
 
-function addsocial() {
+function addsocial(socialName, socialUsername) {
   let socialContainer = document.createElement("div");
-  let description = document.createElement("p");
-    description.innerHTML =
-    document.getElementById("socialName").value +
-    " " +
-    document.getElementById("socialUsername").value;
+  let description = document.createElement("span");
+    description.innerHTML = socialName + " " + socialUsername;
 
   socialContainer.classList.add("social-container");
   socialContainer.appendChild(description);
   let button = document.createElement("button");
-  button.innerHTML = "-";
+  button.innerHTML = "X";
   button.onclick = deletesocial;
   socialContainer.appendChild(button);
   document.getElementById("socialsList").appendChild(socialContainer);
+}
+
+function appendSocial() {
+    let socName = document.getElementById("socialName").value;
+    let socUser = document.getElementById("socialUsername").value;
+
+    addsocial(socName, socUser);
 }
 
 function deletesocial() {
@@ -59,6 +55,5 @@ function deletesocial() {
 function edit() {
   bioButton.style.display = "block";
   bio = document.getElementById("bio");
-  bio.style.width = bio.value.length + "ch";
   document.getElementById("bio").style.borderWidth = 1;
 }

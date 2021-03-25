@@ -46,19 +46,23 @@
 }
 
 .wrapper {
-    margin-left:116px;
-    padding-top: 100px;
+    width: 75%;
+    padding: 50px;
+    padding-top: 150px;
+    margin: 1 auto;
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.35fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "pic desc desc "
-      ".   desc desc "
+      "pic desc"
+      "soc desc"
+      ".   desc"
 }
 .pic { grid-area: pic; }
 .desc { grid-area: desc; }
 .extra { grid-area: extra; }
+#addSocial { grid-area: soc; }
 
 img {
     width: 200px;
@@ -70,12 +74,30 @@ img {
 }
 
 button {
-    background-color: orange;
+    background-color: red;
     border: none;
     color: white;
-    padding: 15px 32px;
     text-align: center;
     display: inline-block;
     text-decoration: none;
     font-size: 16px;
+    border-radius: 50%;
+    padding: 4px 7px;
+}
+
+.social-container {
+    display: inline-block;
+    align-items: center;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 4px 2px;
+    border: 2px solid orange;
+}
+
+.social-container span {
+    margin-right: 5px;
+}
+
+textarea {
+    resize: none;
 }
