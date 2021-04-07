@@ -3,22 +3,145 @@
   <head>
     <title>Search</title>
     <link rel="stylesheet" href="search.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
   <body>
+    
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <h4>Filters</h4>
+
+
+          <div class="filter-container">
+            <div class="filter-item">
+              <label>Age</label>
+              <div class="dropdown">
+                <select name="age-opt">
+                  <option value="Select">Select</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23+">23+</option>
+                </select>
+              </div>
+            </div>
+            <div class="filter-item">
+              <label>Gender</label>
+              <div class="dropdown">
+                <select name="gender-opt">
+                  <option value="Select">Select</option>
+                  <option value="Female">Female</option>
+                  <option value="Male">Male</option>
+                  <option value="Non-binary">Non-binary</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="filter-item">
+              <label>Year</label>
+              <div class="dropdown">
+                <select name="year-opt">
+                  <option value="Select">Select</option>
+                  <option value="Freshman">Freshman</option>
+                  <option value="Sophomore">Sophomore</option>
+                  <option value="Junior">Junior</option>
+                  <option value="Senior">Senior</option>
+                  <option value="Postgrad">Postgrad</option>
+                </select>
+              </div>
+            </div>
+            <div class="filter-item">
+              <label>College</label>
+              <div class="dropdown">
+                <select name="college-opt">
+                  <option value="Select">Select</option>
+                </select>
+              </div>
+            </div>
+            <div class="filter-item">
+              <label>Major</label>
+              <div class="dropdown">
+                <select name="college-opt">
+                  <option value="Select">Select</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <a id = 'floatBtn'>
+      <i class="fa fa-plus my-float"></i>
+    </a>
     <div id = "page">
       <div id = "header">
         <div class = "header-element">
           <a href = "./search.html">UTFF</a>
         </div>
-        <div class = "header-element">
+        <!-- <div class = "header-element">
           <input id = "search-bar" type = "text"/>
-        </div>
+        </div> -->
         <div class = "header-element">
-          <div id="profile-btn"></div>
+          <a href = "./profile.html">
+            <div id="profile-btn"></div>
+          </a>
         </div>
       </div>
+      
       <div id = "content">
-        <div id="filter-bar">
+        <div id = "srp">
+          <div id="srp-table">
+            <div class = "user-entry">
+              <h2>Gabby Dabby</h2>
+              <p>Hello my name is Gabby and this is my bio rn. Please hmu. I am a very lonely person. Wait, wanna take a selfie?</p>
+              <div class = "tags">
+                <div class = "tag"><p>Computer Science</p></div>
+              </div>
+            </div>
+            <div class = "user-entry">
+              <h2>Angelo Coconut</h2>
+              <p>Hello my name is Angelo and this is my bio rn. Please hmu. I am a very lonely person. Wait, wanna take a selfie?</p>
+              <div class = "tags">
+                <div class = "tag"><p>Computer Science</p></div>
+              </div>
+            </div>
+            <div class = "user-entry">
+              <h2>Sarim the Beam</h2>
+              <p>Hello my name is Gabby and this is my bio rn. Please hmu. I am a very lonely person. Wait, wanna take a selfie?</p>
+              <div class = "tags">
+                <div class = "tag"><p>Computer Science</p></div>
+              </div>
+            </div>
+            <div class = "user-entry">
+              <h2>Denzell the Devil</h2>
+              <p>Hello my name is Gabby and this is my bio rn. Please hmu. I am a very lonely person. Wait, wanna take a selfie?</p>
+              <div class = "tags">
+                <div class = "tag"><p>Computer Science</p></div>
+              </div>
+            </div>
+            <div class = "user-entry">
+              <h2>Jose joined The Fray</h2>
+              <p>Hello my name is Gabby and this is my bio rn. Please hmu. I am a very lonely person. Wait, wanna take a selfie?</p>
+              <div class = "tags">
+                <div class = "tag"><p>Computer Science</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+    <script src="search.js"></script>
+  </body>
+</html>
+
+<!-- <div id="filter-bar">
           <h4>Filters</h4>
           <div class="filter-container">
             <div class="filter-item">
@@ -81,51 +204,4 @@
             </div>
           </div>
         </div>
-
-        <div id = "srp">
-          <div id="srp-table">
-            <div class = "user-entry">
-              <h2>Gabby Dabby</h2>
-              <p>Hello my name is Gabby and this is my bio rn. Please hmu. I am a very lonely person. Wait, wanna take a selfie?</p>
-              <div class = "tags">
-                <div class = "tag"><p>Computer Science</p></div>
-              </div>
-            </div>
-            <!-- <hr> -->
-            <div class = "user-entry">
-              <h2>Angelo Coconut</h2>
-              <p>Hello my name is Angelo and this is my bio rn. Please hmu. I am a very lonely person. Wait, wanna take a selfie?</p>
-              <div class = "tags">
-                <div class = "tag"><p>Computer Science</p></div>
-              </div>
-            </div>
-            <div class = "user-entry">
-              <h2>Sarim the Beam</h2>
-              <p>Hello my name is Gabby and this is my bio rn. Please hmu. I am a very lonely person. Wait, wanna take a selfie?</p>
-              <div class = "tags">
-                <div class = "tag"><p>Computer Science</p></div>
-              </div>
-            </div>
-            <div class = "user-entry">
-              <h2>Denzell the Devil</h2>
-              <p>Hello my name is Gabby and this is my bio rn. Please hmu. I am a very lonely person. Wait, wanna take a selfie?</p>
-              <div class = "tags">
-                <div class = "tag"><p>Computer Science</p></div>
-              </div>
-            </div>
-            <div class = "user-entry">
-              <h2>Jose joined The Fray</h2>
-              <p>Hello my name is Gabby and this is my bio rn. Please hmu. I am a very lonely person. Wait, wanna take a selfie?</p>
-              <div class = "tags">
-                <div class = "tag"><p>Computer Science</p></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-      </div>
-    </div>
-    <script src="search.js"></script>
-  </body>
-</html>
+ -->
