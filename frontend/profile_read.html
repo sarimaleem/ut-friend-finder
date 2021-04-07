@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
-    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="profile_read.css" />
 </head>
 
 <body>
@@ -29,25 +29,14 @@
         <div class="desc">
             <h1 id="name"></h1>
             <div class="bioContainer">
-                <textarea cols="90" rows="10" type="text" id="bio" name="social" value="" placeholder="enter social" onclick="edit()"> </textarea>
+                <p cols="90" rows="10" type="text" id="bio" name="social" value="" placeholder="enter social"> </p>
                 <br>
                 <br>
-                <input type="button" id="bioButton" name="button" value="save" onclick="save()">
                 <div id="socialsList"></div>
             </div>
         </div>
-        <div id="addSocial">
-            <form name="myform" action="" method="get">
-                <label>Enter Socials: </label>
-                <br>
-                <input type="text"  name="social" id = "socialName" class='textbox' value="" placeholder="enter social">
-                <input type="text" id="socialUsername" class='textbox' name="social" value="" placeholder="username">
-                <input type="button"  name="button" value="add social" onclick="appendSocial()">
-            </form>
-        </div>
-
     </div>
 
-    <script src="profile.js"></script>
+    <script src="profile_read.js"></script>
 </body>
 </html>
