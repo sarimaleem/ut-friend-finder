@@ -103,12 +103,23 @@ body {
 }
 
 #srp-table .user-entry{
+    margin-bottom: 2%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display:flex;
+    flex-direction: row;
+}
+
+#srp-table .user-entry .content-holder{
     padding-left:5%;
     padding-right:5%;
     padding-bottom:5%;
+    background: white;
     padding-top:2%;
-    margin-bottom: 2px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+}
+
+#srp-table .user-entry .img-holder{
+    width: 20%;
 }
 
 #srp-table .user-entry h2{
